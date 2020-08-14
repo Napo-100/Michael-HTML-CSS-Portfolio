@@ -8,7 +8,7 @@
     --primary-color: #001933;
     --secondary-color: #9EC7CD;
     --tertiary-color: #00CCCC;
-    --background-color: #CCE5FF;
+    --background-color: #CADCE1;
 }
 
 Body {
@@ -65,39 +65,72 @@ header nav ul li a {
     padding: 10px 10px 5px 10px;
     font-size: 1.50vw;
     color: var(--secondary-color);
-    margin: 0 5px 0 5px;
-    
+    margin: 0 5px 0 5px; 
 }
-
-
-
 
 
 .hero {
     background-image: url(../images/IMG_5703.JPG);
-    height: 35em;
+    height: 500px;
     background-size: cover;
     background-position: top;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
 
 body {
-    background-color: lightgray;
+    background-color: var(--background-color)
 }
+
 
 .section-title {
     font-size: 48px;
     color: var(--primary-color);
-    padding: 10px 10px 10px 0;
+    padding: 30px 10px 0 0;
     border-right: 3px solid;
-    text-align: end;
+    text-align: right;
     margin: 0 50px 10px 80px;
     width: 10%;   
+    background-color: purple;
+}
+
+.flex-row {
+    display: flex;
+    background-color: green;
+}
+
+.bio-info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: yellow;
+}
+    
+.bio-image {
+    display: flex;
+} 
+
+.bio-text {
+    display: flex;
+    text-align: left;
+}
+
+.work-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+}
+
+.work-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color:blue;  
 }
 
 
