@@ -83,30 +83,32 @@ body {
 
 
 .section-title {
-    font-size: 48px;
+    display: inline-block;
+    font-size: 32px;
     color: var(--primary-color);
-    padding: 30px 10px 0 0;
+    padding: 30px 15px 0 0;
     border-right: 3px solid;
     text-align: right;
-    margin: 0 50px 10px 80px;
-    width: 10%;   
-    background-color: purple;
+    margin-bottom: 20px;
+    width: 20%;   
+    flex-wrap: unset;
 }
 
 .flex-row {
     display: flex;
-    background-color: green;
 }
 
 .bio-info {
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: flex-end;
-    background-color: yellow;
+    /* justify-content: flex-end; */
+    
 }
     
 .bio-image {
     display: flex;
+    
+
 } 
 
 .bio-text {
@@ -118,22 +120,55 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: white;
+    
+    
 }
 
 .work-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);   
+    grid-template-columns: repeat(3, 1fr);   
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+    border: 2px solid;
 }
 
 .container {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    background-color:blue;  
+    width: 80%;
+    justify-content: center; 
 }
 
+.main-content {
+    display: flex;
+    margin-left: 40px;
+    width: 70%;
+    margin-bottom: 20px;
+}
 
+.main-content p {
+    padding-left: 30px;
+}
+
+.container ul  {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.container ul li {
+    padding-left: 20px;
+}
+
+.container ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary-color);  
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 5px;
+}
 
 
 
