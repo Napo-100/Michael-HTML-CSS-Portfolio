@@ -86,15 +86,12 @@ header nav ul li a {
 .subtitle h3 {
     color: var(--primary-color);
     text-shadow: 2px 2px rgba(158, 199, 205, 0.8);
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 48px;
     margin: 20px 60px;
     padding: 1px 5px 1px 5px;
-    /* background-color: rgba(158, 199, 205, .4); */
-    ;
-    
-    
+    background-color: rgba(0, 25, 51, .25);
 }
 
 body {
@@ -149,19 +146,37 @@ body {
 }
 
 .box1 {
+    background: url("../images/runbuddy.jpg") no-repeat right top;
+    background-size: cover;
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;  
 }
 
-.box1 h3 {
-    position: relative;
-    z-index: 1;
+.box1 a {
+    color: var(--primary-color);
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 3%;
 }
+
+.box1 a:hover {
+    background-color: rgba(0, 25, 51, .5);
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+
+}
+
 
 .box2 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-
     background-color: green;
 }
 
