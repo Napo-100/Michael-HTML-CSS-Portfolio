@@ -147,10 +147,11 @@ body {
     height: 500px;
     justify-content: stretch;
 }
+
 .box-text {
     width: 150px;
     padding: 15px;
-    background-color: rgba(0, 25, 51, .5);
+    background-color: rgba(0, 25, 51, .9);
     box-shadow: -4px -4px 3px grey;
 }
 
@@ -159,43 +160,47 @@ body {
     background-size: cover;
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    display: flex;
+    /* display: flex;
     justify-items: flex-start;
-    align-items: flex-start;  
+    align-items: flex-start;   */
     border: 5px solid rgba(245, 245, 245, 1);
 }
 
 
 .box2 {
-    background: url("../images/runbuddy.jpg") no-repeat right top;
+    background: url("../images/digital-marketing-meeting.jpg") top;
+    background-size: cover;
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
     border: 5px solid rgba(245, 245, 245, 1);
 }
 
 .box3 {
-    background: url("../images/runbuddy.jpg") no-repeat right top;
+    background: url("../images/127477250-locked-puzzle-icon.jpg") center;
+    background-size: cover;
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
     border: 5px solid rgba(245, 245, 245, 1);
 }
 
 .box4 {
-    background: url("../images/runbuddy.jpg") no-repeat right top;
+    background: url("../images/iso-republic-abstract-shape-pattern-background-9.jpg") no-repeat center;
+    background-size: cover;
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
     border: 5px solid rgba(245, 245, 245, 1);
 }
 
 .box5 {
-    background: url("../images/runbuddy.jpg") no-repeat right top;
+    background: url("../images/calculator.jpg") no-repeat center;
+    background-size: cover;
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
     border: 5px solid rgba(245, 245, 245, 1);
 }
 
 .box1 a, .box2 a, .box3 a, .box4 a, .box5 a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     display: block;
     height: 100%;
     width: 100%;
@@ -327,20 +332,21 @@ footer h2 {
 
 
     .section-title {
-        /* display: inline-block; */
+        display: inline-block;
         font-size: 32px;
         color: var(--primary-color);
-        padding: 30px 15px 0 0;
+        padding: 30px 0;
         border-right: none;
         border-bottom: 3px solid var(--primary-color);
         text-align: center;
+        justify-content: center;
         margin-bottom: 20px;
         width: 100%;   
     }
 
-    .section-title h2 {
+    /* .section-title h2 {
         text-align: center;
-    }
+    } */
 
     .flex-row {
         display: inline-block;
@@ -351,21 +357,62 @@ footer h2 {
     }
         
     .bio-image  {
-        width: 50%;
-        padding-left: 55px;
+        /* width: 50%; */
+        margin-left: 55px; 
+        padding-right: 10px;
         /* display: inline-block; */
         /* margin-left: 15px; */
     } 
 
     .container p {
-        margin-right: 25px;
+        margin-right: 55px;
+        padding-left: 10px;
     }
 
     .main-content {
-        margin: 0 15px;
-        width: 100%;
+        /* margin: 0 15px; */
+        margin: 0 auto;
+        /* width: 100%; */
     }
     
+    .work-grid-wrapper {
+    /* display: flex; */
+    /* display: inline-block; */
+    /* justify-content: center;
+    align-items: center; */
+     /* width: 100%; */
+    margin-right: 140px;
+    padding-left: 100px; 
+}
+
+    .work-grid-container {
+    height: 300px;
+}
+   
+
+.container ul  {
+    display: inline-block;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;    
+}
+
+.container ul li {
+    display: inline-block;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    
+    
+   
+}
+
+.container ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary-color);  
+    margin-left: 25px;
+    border-bottom: none;
+}
   
  
 
