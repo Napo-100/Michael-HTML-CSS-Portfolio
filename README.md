@@ -1,6 +1,6 @@
 # Project: Portfolio
 
-## My portfolio!. 
+## My portfolio!
 
 Access the website by clicking <a href="https://napo-100.github.io/Portfolio/" target="_blank">here</a>
 

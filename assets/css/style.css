@@ -199,7 +199,11 @@ body {
     border: 5px solid rgba(245, 245, 245, 1);
 }
 
-.box1 a, .box2 a, .box3 a, .box4 a, .box5 a {
+.box1 a, 
+.box2 a, 
+.box3 a, 
+.box4 a, 
+.box5 a {
     color: var(--secondary-color);
     display: block;
     height: 100%;
@@ -208,7 +212,11 @@ body {
     padding: 5px;
 }
 
-.box1 a:hover, .box2 a:hover, .box3 a:hover, .box4 a:hover, .box5 a:hover  {
+.box1 a:hover,
+.box2 a:hover, 
+.box3 a:hover, 
+.box4 a:hover,
+.box5 a:hover  {
     background-color: rgba(0, 25, 51, .5);
     transition: 1500ms;
 }
