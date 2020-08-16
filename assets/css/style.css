@@ -46,6 +46,8 @@ header a {
 }
 
 header nav {
+    /* display: flex;
+    flex-wrap: nowrap; */
     margin: 7px 5px 5px 5px;
 }
 
@@ -67,7 +69,7 @@ header nav ul li a {
     padding: 10px 10px 5px 10px;
     font-size: 1.50vw;
     color: var(--secondary-color);
-    margin: 0 5px 0 5px; 
+    margin: 0 5px; 
 }
 
 
@@ -85,13 +87,15 @@ header nav ul li a {
 
 .subtitle h3 {
     color: var(--primary-color);
-    text-shadow: 2px 2px rgba(158, 199, 205, 0.8);
+    text-shadow: 2px 2px rgba(180, 180, 180, 0.7);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 48px;
     margin: 20px 60px;
     padding: 1px 5px 1px 5px;
-    background-color: rgba(0, 25, 51, .25);
+    background-color: rgba(0, 25, 51, .35);
+    box-shadow: -7px -5px 5px grey;
+    border: 3px solid rgba(0, 25, 51, .35);
 }
 
 body {
@@ -108,7 +112,6 @@ body {
     text-align: right;
     margin-bottom: 20px;
     width: 20%;   
-    flex-wrap: unset;
 }
 
 .flex-row {
@@ -124,10 +127,10 @@ body {
     display: flex;
 } 
 
-.bio-text {
+/* .bio-text {
     display: flex;
     text-align: left;
-}
+} */
 
 .work-grid-wrapper {
     display: flex;
@@ -144,6 +147,12 @@ body {
     height: 500px;
     justify-content: stretch;
 }
+.box-text {
+    width: 150px;
+    padding: 15px;
+    background-color: rgba(0, 25, 51, .5);
+    box-shadow: -4px -4px 3px grey;
+}
 
 .box1 {
     background: url("../images/runbuddy.jpg") no-repeat right top;
@@ -153,63 +162,50 @@ body {
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;  
+    border: 5px solid rgba(245, 245, 245, 1);
 }
 
-.box1 a {
+
+.box2 {
+    background: url("../images/runbuddy.jpg") no-repeat right top;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    border: 5px solid rgba(245, 245, 245, 1);
+}
+
+.box3 {
+    background: url("../images/runbuddy.jpg") no-repeat right top;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    border: 5px solid rgba(245, 245, 245, 1);
+}
+
+.box4 {
+    background: url("../images/runbuddy.jpg") no-repeat right top;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    border: 5px solid rgba(245, 245, 245, 1);
+}
+
+.box5 {
+    background: url("../images/runbuddy.jpg") no-repeat right top;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    border: 5px solid rgba(245, 245, 245, 1);
+}
+
+.box1 a, .box2 a, .box3 a, .box4 a, .box5 a {
     color: var(--primary-color);
     display: block;
     height: 100%;
     width: 100%;
     text-decoration: none;
-    padding: 3%;
+    padding: 5px 5px;
 }
 
-.box1 a:hover {
+
+.box1 a:hover, .box2 a:hover, .box3 a:hover, .box4 a:hover, .box5 a:hover  {
     background-color: rgba(0, 25, 51, .5);
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 3%;
-
-}
-
-
-.box2 {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-    background-color: green;
-}
-
-.box3 {
-    background-color: white;
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
-}
-
-.box4 {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-    background-color: red;
-}
-
-.box5 {
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
-
-    background-color:black;
-}
-
-
-.container {
-    display: flex;
-    width: auto;
-    align-content: center;
-}
-
-.container p {
-    font-size: 20px;
-    margin-left: 2em;
-   
 }
 
 .main-content {
@@ -218,16 +214,31 @@ body {
     margin: 0 80px 20px 40px;
 }
 
+.container {
+    display: flex;
+    width: auto;
+    /* align-content: center; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+.container p {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
 .container ul  {
     display: flex;
-    justify-content: space-around;
     list-style: none;
     margin-top: 5px;
     align-items: center;
 }
 
 .container ul li {
-    padding-left: 20px;
+    display: flex;
+    padding-right: 40px;
+   
 }
 
 .container ul li a {
@@ -236,6 +247,7 @@ body {
     color: var(--primary-color);  
     border-bottom: 3px solid var(--primary-color);
     padding-bottom: 5px;
+    margin-left: 15px;
 }
 
 footer {
@@ -247,6 +259,115 @@ footer h2 {
     text-align: end;
     padding: 20px 20px;
 }
+
+
+/* Media Query Start */
+
+/* 1024 px */
+
+@media only screen and (max-width: 1024px) {
+  
+
+    header nav ul li a {
+        font-size: 2vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin-top: 5px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: nowrap;
+        /* margin: 7px 5px 5px 5px; */
+    }
+    
+    .container ul li {
+        display: flex;
+        padding-right: 20px;
+       
+    }
+}
+
+/* 900 px */
+
+@media only screen and (max-width:900px) {
+
+    header {
+        justify-content: center;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 36px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    header nav ul li a {
+        font-size: 4vw;
+        margin-bottom: 20px;
+    }
+
+
+      /* Erases hero jumbotron to allow for cleaner look */
+      .hero {
+        display: none;
+    }
+    
+    
+    .subtitle h3 {
+        display: none;
+    }
+
+
+    .section-title {
+        /* display: inline-block; */
+        font-size: 32px;
+        color: var(--primary-color);
+        padding: 30px 15px 0 0;
+        border-right: none;
+        border-bottom: 3px solid var(--primary-color);
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;   
+    }
+
+    .section-title h2 {
+        text-align: center;
+    }
+
+    .flex-row {
+        display: inline-block;
+    }
+
+    .bio-info {
+         width: 100%; 
+    }
+        
+    .bio-image  {
+        width: 50%;
+        padding-left: 55px;
+        /* display: inline-block; */
+        /* margin-left: 15px; */
+    } 
+
+    .container p {
+        margin-right: 25px;
+    }
+
+    .main-content {
+        margin: 0 15px;
+        width: 100%;
+    }
+    
+  
+ 
 
 
 
