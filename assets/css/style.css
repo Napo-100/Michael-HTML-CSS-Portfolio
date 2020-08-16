@@ -464,6 +464,7 @@ footer h2 {
     margin-left: 25px;
     border-bottom: none;
 }
+}
 
 @media only screen and (max-width: 760px) {
     header nav {
@@ -476,13 +477,12 @@ footer h2 {
     }
     header nav ul li {
         padding: 5px;
-       
     }
+
     header nav ul li a {
         padding: 0;
         margin: 0;
-        justify-content: center;
-        
+        justify-content: center;  
     }
     .bio-image {
         width: 100%;
@@ -494,9 +494,11 @@ footer h2 {
         width: auto;
         height: 400px;
     }
+
     .container-1 {
         display: inline-block;
     }
+    
     .container-1 p {
         width: 100%;
         margin-top: 20px;
@@ -512,12 +514,3 @@ footer h2 {
         font-size: 20px;
     }
 }
-  
- 
-
-
-
-
-
-
-
